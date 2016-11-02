@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+SOURCE_DIR := $(CURDIR)/src/github.com/aptly-dev/aptly
+DEST_DIR := $(CURDIR)/debian/aptly
+
+%:
+	dh $@ --with systemd
+
+override_dh_auto_clean:
+	rm -f aptly
+
+override_dh_auto_build:
+	GOPATH=$(CURDIR) go build -o aptly $(SOURCE_DIR)/main.go
+
+override_dh_auto_install:
+	dh_bash-completion
+	mkdir -p $(DEST_DIR)/usr/bin
+	mv aptly  $(DEST_DIR)/usr/bin/

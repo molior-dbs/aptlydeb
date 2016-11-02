@@ -1,0 +1,9 @@
+debian/aptly.debhelper.log
+debian/aptly.substvars
+debian/aptly/
+debian/debhelper-build-stamp
+debian/files
+debian/aptly.postinst.debhelper
+debian/aptly.postrm.debhelper
+debian/aptly.prerm.debhelper
+

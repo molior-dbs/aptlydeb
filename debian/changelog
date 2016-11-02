@@ -1,0 +1,425 @@
+aptly (1.3.0.adsy9) jessie; urgency=medium
+
+  * bump version 1.3.0.adsy9
+
+ -- André Roth <neolynx@gmail.com>  Sun, 07 Jul 2019 14:33:29 +0200
+
+aptly (1.3.0.adsy8) jessie; urgency=medium
+
+  * bump version 1.3.0.adsy8
+
+ -- André Roth <andre.roth@roche.com>  Thu, 16 May 2019 20:15:41 +0200
+
+aptly (1.3.0.adsy7) jessie; urgency=medium
+
+  * build for 1.3 and 1.3.1
+
+ -- André Roth <andre.roth@roche.com>  Tue, 12 Mar 2019 16:04:21 +0100
+
+aptly (1.3.0.adsy6) jessie; urgency=medium
+
+  * build for 1.3.0
+
+ -- André Roth <andre.roth@roche.com>  Fri, 22 Feb 2019 15:54:35 +0100
+
+aptly (1.3.0.adsy5) jessie; urgency=medium
+
+  * update upstream aptly submodule
+  * debian: fix dependency to gpgv1 on debian stretch
+
+ -- André Roth <andre.roth@roche.com>  Fri, 22 Feb 2019 15:52:35 +0100
+
+aptly (1.3.0.adsy2) jessie; urgency=medium
+
+  * integrate new adfinis-forks/aptly version v1.3.0+adsy2
+  * export TERM=dump variable in aptly.service
+
+ -- Eric Keller <eric.keller.ek1@roche.com>  Mon, 23 Jul 2018 15:49:24 +0200
+
+aptly (1.2.0.adsy6) jessie; urgency=medium
+
+  * bump version 1.2.0.adsy6
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Wed, 27 Jun 2018 13:34:41 +0200
+
+aptly (1.2.0.adsy5) jessie; urgency=medium
+
+  * fix create-aptly-passwd
+
+ -- André Roth <andre.roth@roche.com>  Fri, 19 Jan 2018 22:08:00 +0100
+
+aptly (1.2.0.adsy4) jessie; urgency=medium
+
+  * allow to create aptly api password
+
+ -- André Roth <andre.roth@roche.com>  Fri, 19 Jan 2018 21:18:45 +0100
+
+aptly (1.2.0.adsy3) jessie; urgency=medium
+
+  * create-keys: remove temp dir
+
+ -- André Roth <andre.roth@roche.com>  Fri, 19 Jan 2018 18:48:03 +0100
+
+aptly (1.2.0.adsy2) jessie; urgency=medium
+
+  * add create key script
+
+ -- André Roth <andre.roth@roche.com>  Fri, 19 Jan 2018 18:36:59 +0100
+
+aptly (1.2.0.adsy1) jessie; urgency=medium
+
+  * debian: add dirmngr dependency
+
+ -- André Roth <andre.roth@roche.com>  Thu, 18 Jan 2018 17:53:04 +0100
+
+aptly (1.2.0.adsy) jessie; urgency=medium
+
+  * build on molior prod
+
+ -- André Roth <andre.roth@roche.com>  Fri, 05 Jan 2018 21:06:59 +0100
+
+aptly (1.1.1roche9) jessie; urgency=medium
+
+  * bump version 1.1.1roche9
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Mon, 18 Dec 2017 11:37:29 +0100
+
+aptly (1.1.1roche8) jessie; urgency=medium
+
+  * bump version 1.1.1roche8
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Mon, 18 Dec 2017 11:33:35 +0100
+
+aptly (1.1.1roche5) jessie; urgency=medium
+
+  * bump version 1.1.1roche5
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Thu, 30 Nov 2017 14:23:03 +0100
+
+aptly (1.1.1roche4) jessie; urgency=medium
+
+  * bump version 1.1.1roche4
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Tue, 28 Nov 2017 08:14:43 +0100
+
+aptly (1.1.1roche3) jessie; urgency=medium
+
+  * bump version 1.1.1roche3
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Fri, 27 Oct 2017 07:24:05 +0200
+
+aptly (1.1.1roche2) jessie; urgency=medium
+
+  * nginx: allow uploads of up to 2GB
+
+ -- André Roth <andre.roth@roche.com>  Mon, 16 Oct 2017 23:33:24 +0200
+
+aptly (1.1.1roche1) jessie; urgency=medium
+
+  * bump version 1.1.1roche1
+  * native package version may not have a revision
+
+ -- André Roth <andre.roth@roche.com>  Thu, 21 Sep 2017 16:40:58 +0200
+
+aptly (1.1.1-roche1) jessie; urgency=medium
+
+  * bump version 1.1.1-roche1
+  * fix aptly version
+
+ -- André Roth <andre.roth@roche.com>  Thu, 21 Sep 2017 16:26:45 +0200
+
+aptly (0.9.8~dev30) jessie; urgency=medium
+
+  * remove molior files
+  * use gnupg1 and internal gpg provider
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Thu, 21 Sep 2017 15:38:22 +0200
+
+aptly (0.9.8~dev29) jessie; urgency=medium
+
+  * bump version 0.9.8~dev29
+  * remove molior files
+  * use gnupg1 and internal gpg provider
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Fri, 15 Sep 2017 13:03:06 +0200
+
+aptly (0.9.8~dev28) jessie; urgency=medium
+
+  * bump version 0.9.8~dev28
+  * support Acquire-By-Hash
+  * debian: fix postinst
+  * update submodule to use new aptly
+  * debian: build new aptly
+  * debian: remove gom build
+  * nginx: increase timeout for aptlyapi
+  * debian: remove molior configuration
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Fri, 15 Sep 2017 11:02:05 +0200
+
+aptly (0.9.8~dev27) jessie; urgency=medium
+
+  * Copy gpg-pass file to /etc if it does not already exist
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Tue, 22 Aug 2017 10:22:16 +0200
+
+aptly (0.9.8~dev26) jessie; urgency=medium
+
+  * update apltyapipassword file mode to rw
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Fri, 18 Aug 2017 08:37:51 +0200
+
+aptly (0.9.8~dev25) jessie; urgency=medium
+
+  * Fix home dir permissions in postinst
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Thu, 17 Aug 2017 16:11:26 +0200
+
+aptly (0.9.8~dev24) jessie; urgency=medium
+
+  * Move to molior version 2
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Tue, 08 Aug 2017 08:58:46 +0200
+
+aptly (0.9.8~dev23) jessie; urgency=medium
+
+  * ensure proper ownership for the aptly homedir
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Mon, 07 Aug 2017 14:09:14 +0200
+
+aptly (0.9.8~dev22) jessie; urgency=medium
+
+  * split gnupg setup since haveged service cannot be started in chroot
+  * prevent invoke-rc to be called in chroot
+  * use absolute path for ischroot command, ignore invoke-rc errors
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Wed, 31 May 2017 09:34:35 +0200
+
+aptly (0.9.8~dev21) jessie; urgency=medium
+
+  * debian: fix nginx config
+
+ -- André Roth <andre.roth@roche.com>  Sat, 04 Feb 2017 12:43:05 +0100
+
+aptly (0.9.8~dev20) jessie; urgency=medium
+
+  * debian: pre-depend on haveged
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 19:29:55 +0100
+
+aptly (0.9.8~dev19) jessie; urgency=medium
+
+  * debian: add systemd debhelper
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 18:01:06 +0100
+
+aptly (0.9.8~dev18) jessie; urgency=medium
+
+  * debian: add nginx dependency
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 17:48:25 +0100
+
+aptly (0.9.8~dev17) jessie; urgency=medium
+
+  * debian: add apache2-utils dependency
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 16:12:38 +0100
+
+aptly (0.9.8~dev16) jessie; urgency=medium
+
+  * debian add apg dependency
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 15:08:52 +0100
+
+aptly (0.9.8~dev15) jessie; urgency=medium
+
+  * debian: fix build depends for jessie-backports
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 14:26:03 +0100
+
+aptly (0.9.8~dev14) jessie; urgency=medium
+
+  * debian: add config and service
+
+ -- André Roth <andre.roth@roche.com>  Wed, 01 Feb 2017 14:03:01 +0100
+
+aptly (0.9.8~dev13) jessie; urgency=medium
+
+  * Rename rlx-info file to molior.yml
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Mon, 23 Jan 2017 08:59:19 +0100
+
+aptly (0.9.8~dev12) jessie; urgency=medium
+
+  * update go dependencies
+
+ -- André Roth <andre.roth@roche.com>  Fri, 20 Jan 2017 12:02:49 +0100
+
+aptly (0.9.8~dev11) jessie; urgency=medium
+
+  * integrate new aptly version
+
+ -- André Roth <andre.roth@roche.com>  Fri, 20 Jan 2017 11:14:03 +0100
+
+aptly (0.9.8~dev10) jessie; urgency=medium
+
+  * integrate new aptly
+
+ -- André Roth <andre.roth@roche.com>  Wed, 18 Jan 2017 11:16:05 +0100
+
+aptly (0.9.8~dev9) jessie; urgency=medium
+
+  * Add rlx-info file
+
+ -- Michael Imfeld <michael.imfeld@roche.com>  Mon, 09 Jan 2017 10:46:38 +0100
+
+aptly (0.9.8~dev8) jessie; urgency=medium
+
+  * update aptly
+
+ -- André Roth <andre.roth@roche.com>  Fri, 02 Dec 2016 10:58:01 +0100
+
+aptly (0.9.8~dev7) jessie; urgency=medium
+
+  * update new aptly
+  * add multiple gpg keys
+
+ -- André Roth <andre.roth@roche.com>  Thu, 01 Dec 2016 18:19:18 +0100
+
+aptly (0.9.8~dev6) jessie; urgency=medium
+
+  * update new aptly
+
+ -- André Roth <andre.roth@roche.com>  Thu, 01 Dec 2016 16:01:05 +0100
+
+aptly (0.9.8~dev5) jessie; urgency=medium
+
+  * update gom dependencies
+  * use updated aptly
+  * remove unused gom dependencies
+
+ -- André Roth <andre.roth@roche.com>  Thu, 01 Dec 2016 15:07:48 +0100
+
+aptly (0.9.8~dev4) jessie; urgency=medium
+
+  * update aptly
+
+ -- André Roth <andre.roth@roche.com>  Wed, 30 Nov 2016 11:46:28 +0100
+
+aptly (0.9.8~dev3) jessie; urgency=medium
+
+  * integrate new commits from submodule
+
+ -- André Roth <andre.roth@roche.com>  Mon, 21 Nov 2016 14:32:37 +0100
+
+aptly (0.9.8~dev2) xenial; urgency=medium
+
+  * bump version 0.9.8~dev2
+  * update aptly submodule
+
+ -- Alex Wagner <alex.wagner@contractors.roche.com>  Mon, 07 Nov 2016 16:05:46 +0100
+
+aptly (0.9.8~dev) jessie; urgency=medium
+
+  * Roche debianized
+
+ -- Alex Wagner <alex.wagner@contractors.roche.com>  Wed, 02 Nov 2016 16:33:13 +0100
+
+aptly (0.9.6-1) unstable; urgency=medium
+
+  * Import new upstream version 0.9.6
+  * Add dependency on xz-utils
+  * Licenses and copyrights
+
+ -- Sebastien Delafond <seb@debian.org>  Wed, 10 Feb 2016 18:28:51 +0100
+
+aptly (0.9.5-2) unstable; urgency=medium
+
+  * Remove empty component in GOPATH (Closes: #793838)
+
+  [ Sebastien Delafond ]
+
+ -- Sebastien Delafond <seb@debian.org>  Sun, 16 Aug 2015 18:42:22 +0200
+
+aptly (0.9.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.9.5
+  * Up-to-date bash completion
+
+ -- Sebastien Delafond <seb@debian.org>  Fri, 15 May 2015 10:46:51 +0200
+
+aptly (0.9.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.9.1
+  * Document licenses and copyrights for new dependencies
+  * Suggest graphviz
+  * Proper name for bash-completion file
+  * Bump-up Standards-Version
+
+ -- Sebastien Delafond <seb@debian.org>  Sat, 02 May 2015 12:57:16 +0200
+
+aptly (0.8-3) unstable; urgency=medium
+
+  * Correct Vcs-Browser entry (Closes: #764622)
+  * Correct dependency from "gpg" to "gnupg" (Closes: #764619)
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 09 Oct 2014 18:41:38 +0200
+
+aptly (0.8-2) unstable; urgency=medium
+
+  * Add missing dependencies on bzip2, gpg and gpgv
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 09 Oct 2014 11:15:21 +0200
+
+aptly (0.8-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.8
+  * Document new copyrights and licenses
+  * Add bash completion snippet
+  * Reference full paths in debian/copyright, and remove unused
+    references, so lintian does not complain
+
+ -- Sebastien Delafond <seb@debian.org>  Sat, 04 Oct 2014 17:46:24 +0200
+
+aptly (0.7.1-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.7.1
+  * Add copyright information for new libraries
+
+ -- Sebastien Delafond <seb@debian.org>  Wed, 10 Sep 2014 10:03:27 +0200
+
+aptly (0.5-5) unstable; urgency=medium
+
+  * Turn off verbose mode
+  * Correct Vcs-* information
+  * gocov is licensed MIT, not BSD-3
+  * Add missing MIT license text
+
+ -- Sebastien Delafond <seb@debian.org>  Tue, 09 Sep 2014 09:20:40 +0200
+
+aptly (0.5-4) unstable; urgency=medium
+
+  * Collect licenses by going over files one by one
+  * Use packaged golang-go.tools
+
+ -- Sebastien Delafond <seb@debian.org>  Thu, 10 Jul 2014 00:49:09 +0200
+
+aptly (0.5-3) unstable; urgency=low
+
+  * Licensing:
+    - goleveldb is BSD-2, not BSD-3
+    - _vendor/src/code.google.com/p/gographviz/scanner/scanner is BSD-3,
+      copyright 2009 The Go Authors
+
+ -- Sebastien Delafond <seb@debian.org>  Wed, 28 May 2014 10:04:01 +0200
+
+aptly (0.5-2) unstable; urgency=low
+
+  * Go interpreter not needed at runtime
+
+ -- Sebastien Delafond <seb@debian.org>  Fri, 02 May 2014 12:04:02 +0200
+
+aptly (0.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #746343)
+
+ -- Sebastien Delafond <seb@debian.org>  Tue, 29 Apr 2014 15:47:31 +0200
