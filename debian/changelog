@@ -1,6 +1,6 @@
-aptly (1.3.0.adsy10.molior4) jessie; urgency=medium
+aptly (1.4.0.molior1) jessie; urgency=medium
 
-  * bump version 1.3.0.adsy10.molior4
+  * user 1.4.0 from upstream
 
  -- André Roth <neolynx@gmail.com>  Sat, 26 Sep 2020 14:08:36 +0000
 
