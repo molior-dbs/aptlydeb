@@ -1,3 +1,9 @@
+aptly (1.4.0.molior4) jessie; urgency=medium
+
+  * bump version 1.4.0.molior4
+
+ -- André Roth <neolynx@gmail.com>  Fri, 07 May 2021 21:21:55 +0200
+
 aptly (1.4.0.molior3) jessie; urgency=medium
 
   * bump version 1.4.0.molior3
