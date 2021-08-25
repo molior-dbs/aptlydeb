@@ -6,6 +6,7 @@
 
 SOURCE_DIR := $(CURDIR)/src/github.com/aptly-dev/aptly
 DEST_DIR := $(CURDIR)/debian/aptly
+VERSION := $(shell dpkg-parsechangelog -S Version)
 
 %:
 	dh $@ --with systemd
@@ -14,7 +15,8 @@ override_dh_auto_clean:
 	rm -f aptly
 
 override_dh_auto_build:
-	GOPATH=$(CURDIR) go build -o aptly $(SOURCE_DIR)/main.go
+	cd ${SOURCE_DIR} && go mod download
+	cd ${SOURCE_DIR} && GO111MODULE=on GOBIN=$(CURDIR) go install -v -ldflags "-X main.Version=$(VERSION)"
 
 override_dh_auto_install:
 	dh_bash-completion
