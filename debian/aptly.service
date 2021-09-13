@@ -6,9 +6,6 @@ Environment=TERM=dumb
 User=aptly
 WorkingDirectory=/var/lib/aptly
 ExecStart=/usr/bin/aptly api serve -gpg-provider=internal -listen localhost:8000
-KillSignal=SIGQUIT
-KillMode=process
-TimeoutStopSec=15s
 
 [Install]
 WantedBy=multi-user.target
