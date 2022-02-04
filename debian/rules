@@ -4,21 +4,26 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-SOURCE_DIR := $(CURDIR)/src/github.com/aptly-dev/aptly
 DEST_DIR := $(CURDIR)/debian/aptly
 VERSION := $(shell dpkg-parsechangelog -S Version)
+APTLY_VERSION := 814d4dbb
 
 %:
-	dh $@ --with systemd
+	dh $@
 
 override_dh_auto_clean:
 	rm -f aptly
 
 override_dh_auto_build:
-	cd ${SOURCE_DIR} && go mod download
-	cd ${SOURCE_DIR} && GO111MODULE=on GOBIN=$(CURDIR) go install -v -ldflags "-X main.Version=$(VERSION)"
+	rm -f go.mod
+	go mod init local/build
+	go mod edit -require github.com/aptly-dev/aptly@${APTLY_VERSION}
+	go build -o aptly -ldflags "-X main.Version=$(VERSION)" github.com/aptly-dev/aptly
 
 override_dh_auto_install:
 	dh_bash-completion
 	mkdir -p $(DEST_DIR)/usr/bin
 	mv aptly  $(DEST_DIR)/usr/bin/
+
+override_dh_installman:
+	dh_installman --sourcedir=$(shell go env GOPATH)/pkg/mod/github.com/aptly-dev/aptly@$(shell go mod edit -print | grep aptly-dev | cut -d ' ' -f 3)/

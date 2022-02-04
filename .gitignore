@@ -1,3 +1,5 @@
+/go.mod
+/go.sum
 debian/aptly.debhelper.log
 debian/aptly.substvars
 debian/aptly/

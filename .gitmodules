@@ -1,3 +1,0 @@
-[submodule "src/github.com/aptly-dev/aptly"]
-	path = src/github.com/aptly-dev/aptly
-	url = https://github.com/aptly-dev/aptly.git
